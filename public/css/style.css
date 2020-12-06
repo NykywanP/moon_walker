@@ -5,5 +5,47 @@ nav ul li {
 }
 
 h1 {
-  color: chartreuse;
+  color: grey;
+  text-align: center;
+  text-shadow: 1px 1px purple;
+  font-size: 40px;
 }
+h2 {
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+  body {
+    background-image: url("https://thumbs.gfycat.com/BriefIgnorantBlackbuck-size_restricted.gif");
+   background-position: right top;
+   background-attachment: fixed;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%;
+  }
+  .mj {
+   background-position: center;
+  }
+ footer {
+   color: white;
+   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+ }
+ h3 {
+  color: white;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+ }
+ .jackson {
+   background-size: 10px;
+ }
+ nav {
+   background-color: grey;
+   background-size: 60px;
+ }
+ h4 {
+   text-align: center;
+   color: white;
+   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+ }

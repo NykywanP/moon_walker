@@ -4,9 +4,10 @@ const layouts = require('express-ejs-layouts');
 const session = require('express-session');
 const passport = require('./config/ppConfig');
 const flash = require('connect-flash');
+const axios =('axios');
 const SECRET_SESSION = process.env.SECRET_SESSION;
 const app = express();
-
+ 
 // isLoggedIn middleware
 const isLoggedIn = require('./middleware/isLoggedIn');
 
@@ -27,6 +28,7 @@ const sessionObject = {
   saveUninitialized: true
 }
 
+
 app.use(session(sessionObject));
 
 // Initialize passport and run through middleware
@@ -35,7 +37,7 @@ app.use(passport.session());
 
 // Flash
 // Using flash throughout app to send temp messages to user
-app.use(flash());
+app.use(flash())
 
 // Messages that will be accessible to every view
 app.use((req, res, next) => {
@@ -59,7 +61,10 @@ app.use('/auth', require('./routes/auth'));
 
 const PORT = process.env.PORT || 3000;
 const server = app.listen(PORT, () => {
-  console.log(`🎧 You're listening to the smooth sounds of port ${PORT} 🎧`);
+  console.log(`Moon Landing ${PORT}`);
 });
+
+
+
 
 module.exports = server;

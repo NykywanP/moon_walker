@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Authentication</title>
+    <title>Moon Walker</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="axios.js"></script>
   </head>
   <body>
     <%- include('partials/alerts') %>
@@ -12,16 +14,30 @@
       <nav>
         <ul>
           <% if (!currentUser) { %>
-            <li><a href="/auth/signup">Signup</a></li>
+           <li><a href="/auth/signup">Signup</a></li>
             <li><a href="/auth/login">Login</a></li>
           <% } else {%>
             <li><a href="/auth/logout">Logout</a></li>
             <li><a href="/profile">Profile</a></li>
           <% } %>
+          
         </ul>
       </nav>
     </header>
-    <h1>Authentication</h1>
+    <h1>WELCOME TO THE MOON WALKER </h1>
     <%- body %>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Moon_rotating_full_160px.gif" alt="Moon" class="center">
   </body>
+  <div class="apollo">
+    <h3>Search Apollo Landings</h3>
+    <input type="text" placeholder="You can fly too.."
+  </div> <button>Click</button>
 </html>
+
+<footer> <img src="https://i.gifer.com/1dg5.gif"  alt="Moon" class="jackson">
+  <h4>Moon-Walker@lists.arc.nasa.gov</h4>
+</footer>
+
+
+
+

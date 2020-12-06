@@ -1,107 +1,28 @@
-# Express Authentication
+# Moon Walker 🌓  🌘
 
-Express authentication template using Passport + flash messages + custom middleware
+## Project Motivations
+This is my second project with General Assembly. We have been working on some backend software development. like SQL, node, and express. Also we were required to use an API. I have always been a space codet and love to explore anything outside of our atmosphere. 
 
-## What it includes
 
-* Sequelize user model / migration
-* Settings for PostgreSQL
-* Passport and passport-local for authentication
-* Sessions to keep user logged in between pages
-* Flash messages for errors and successes
-* Passwords that are hashed with BCrypt
-* EJS Templating and EJS Layouts
+## What is includes in this Project
 
-### User Model
+1. Sequelize user model / migration
+2. Settings for PostgreSQL
+3. Passport and passport-local for authentication
+4. Sessions to keep user logged in between pages
+6. Flash messages for errors and successes
+7. Passwords that are hashed with BCrypt
+8. EJS Templating and EJS Layouts
 
-| Column Name | Data Type | Notes |
-| --------------- | ------------- | ------------------------------ |
-| id | Integer | Serial Primary Key, Auto-generated |
-| name | String | Must be provided |
-| email | String | Must be unique / used for login |
-| password | String | Stored as a hash |
-| createdAt | Date | Auto-generated |
-| updatedAt | Date | Auto-generated |
+## API Used
+Nasa Open APIs ```https://api.nasa.gov/``` You have to create a key in order to collect the data!!
 
-### Default Routes
+## What was verified via Postman
+1. ```https://api.nasa.gov/planetary/apod``` 
+2. ```https://trek.nasa.gov/tiles/Moon/EQ/LRO_WAC_Mosaic_Global_303ppd_v02/1.0.0/default/default028mm/0/0/0.jpg```
 
-| Method | Path | Location | Purpose |
-| ------ | ---------------- | -------------- | ------------------- |
-| GET | / | server.js | Home page |
-| GET | /auth/login | auth.js | Login form |
-| GET | /auth/signup | auth.js | Signup form |
-| POST | /auth/login | auth.js | Login user |
-| POST | /auth/signup | auth.js | Creates User |
-| GET | /auth/logout | auth.js | Removes session info |
-| GET | /profile | server.js | Regular User Profile |
+## Setup Instructions
 
-## Steps To Use
 
-#### 1. Create a new repo on Github and use your 'express-authentication' as the template
 
-When we are finished with this boilerplate, we are going to make it a template on Github that will allow us to create a new repo on Github with all this code already loaded in.
-* Go to `github.com` and create a new repository. In the template dropdown, choose this template.
-* Clone your new repo to your local machine
-* Get Codin'!
 
-#### 2. Delete any .keep files
-
-The `.keep` files are there to maintain the file structure of the auth. If there is a folder that has nothing in it, git won't add it. The dev work around is to add a file to it that has nothing in it, just forces git to keep the folder so we can use it later.
-
-#### 3. Install node modules from the package.json
-
-```
-npm install
-```
-
-(Or just `npm i` for short)
-
-#### 4. Customize with new project name
-
-Remove defaulty type stuff. Some areas to consider are:
-
-* Title in `layout.ejs`
-* Description/Repo Link in `package.json`
-* Remove boilerplate's README content and replace with new project's readme
-
-#### 5. Create a new database for the new project
-
-Using the sequelize command line interface, you can create a new database from the terminal.
-
-```
-createdb <new_db_name>
-```
-
-#### 6. Update `config.json`
-
-* Change the database name
-* Other settings are likely okay, but check username, password, and dialect
-
-#### 7. Check the models and migrations for relevance to your project's needs
-
-For example, if your project requires a birthdate field, then don't add that in there. 
-
-> When changing your models, update both the model and the migration.
-
-#### 8. Run the migrations
-
-```
-sequelize db:migrate
-```
-
-#### 9. Add a `.env` file with the following fields:
-
-* SESSION_SECRET: Can be any random string; usually a hash in production
-* PORT: Usually 3000 or 8000
-
-#### 10. Run server; make sure it works
-
-```
-nodemon
-```
-
-or
-
-```
-node index.js
-```

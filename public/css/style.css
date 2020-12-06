@@ -38,7 +38,9 @@ h2 {
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
  }
  .jackson {
-   background-size: 10px;
+   background-size: 5px;
+   margin-bottom: 20;
+   
  }
  nav {
    background-color: grey;
@@ -49,3 +51,18 @@ h2 {
    color: white;
    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
  }
+ .apollo {
+   text-align: center;
+ }
+
+ }.div-wrapper {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.div-wrapper img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
